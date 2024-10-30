@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'linea'; /* Nom de la police que vous utiliserez dans votre projet */
+  src: url('fonts/linea.otf') format('opentype'); /* Chemin vers votre fichier .otf */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'menlo';
+  src: url('fonts/Menlo-Regular.woff') format('woff'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+body {
+  background: rgb(6, 6, 6);
+  color: rgb(13, 13, 13);
+  margin: auto;
+  max-width: 900px;
+}
+
+header {
+  color: lightgrey;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+header span{
+    font-family: 'menlo', sans-serif;
+}
+
+
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  font-family: 'linea', sans-serif;
+  color:greenyellow
+
+}
+
+p {
+  padding: 2rem;
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 50vh;
+}
